@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		638C371023A36A9F00F90BFA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C370F23A36A9F00F90BFA /* LoginVC.swift */; };
 		638C371223A36AC500F90BFA /* YourorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C371123A36AC500F90BFA /* YourorderVC.swift */; };
 		638C371823A36CD000F90BFA /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C371623A36CD000F90BFA /* MenuTableCell.swift */; };
+		638C371D23A373A900F90BFA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C371C23A373A900F90BFA /* Constant.swift */; };
+		638C371F23A373B700F90BFA /* NetworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C371E23A373B700F90BFA /* NetworkClass.swift */; };
 		A1CC182716F7D0EAC1E61E9F /* Pods_UrbanPaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86982F6F95C286BF1484992B /* Pods_UrbanPaw.framework */; };
 		B6181C552AF33C9335941C68 /* Pods_UrbanPawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC0F359E6372D367CEA3571 /* Pods_UrbanPawTests.framework */; };
 		D9D2FB49C01EBBA3119AE7C0 /* Pods_UrbanPaw_UrbanPawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6435DE51617EEE3F534F39 /* Pods_UrbanPaw_UrbanPawUITests.framework */; };
@@ -60,6 +62,8 @@
 		638C370F23A36A9F00F90BFA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		638C371123A36AC500F90BFA /* YourorderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourorderVC.swift; sourceTree = "<group>"; };
 		638C371623A36CD000F90BFA /* MenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
+		638C371C23A373A900F90BFA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		638C371E23A373B700F90BFA /* NetworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClass.swift; sourceTree = "<group>"; };
 		86982F6F95C286BF1484992B /* Pods_UrbanPaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrbanPaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CEE0E3B9F85BCCCD05DE5C /* Pods-UrbanPawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanPawTests.debug.xcconfig"; path = "Target Support Files/Pods-UrbanPawTests/Pods-UrbanPawTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD6435DE51617EEE3F534F39 /* Pods_UrbanPaw_UrbanPawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrbanPaw_UrbanPawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +109,6 @@
 				A3CEE0E3B9F85BCCCD05DE5C /* Pods-UrbanPawTests.debug.xcconfig */,
 				3A5D1EAFF41E8B4A9E90753C /* Pods-UrbanPawTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -187,7 +190,8 @@
 		638C371423A36AD700F90BFA /* XtraResource */ = {
 			isa = PBXGroup;
 			children = (
-				638C371623A36CD000F90BFA /* MenuTableCell.swift */,
+				638C371B23A3738F00F90BFA /* Constants */,
+				638C371A23A3738600F90BFA /* Cells */,
 			);
 			path = XtraResource;
 			sourceTree = "<group>";
@@ -197,6 +201,23 @@
 			children = (
 			);
 			path = MenuItems;
+			sourceTree = "<group>";
+		};
+		638C371A23A3738600F90BFA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				638C371623A36CD000F90BFA /* MenuTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		638C371B23A3738F00F90BFA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				638C371C23A373A900F90BFA /* Constant.swift */,
+				638C371E23A373B700F90BFA /* NetworkClass.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,7 +463,9 @@
 				638C36E023A36A6300F90BFA /* AppDelegate.swift in Sources */,
 				638C36E223A36A6300F90BFA /* SceneDelegate.swift in Sources */,
 				638C371823A36CD000F90BFA /* MenuTableCell.swift in Sources */,
+				638C371F23A373B700F90BFA /* NetworkClass.swift in Sources */,
 				638C371023A36A9F00F90BFA /* LoginVC.swift in Sources */,
+				638C371D23A373A900F90BFA /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

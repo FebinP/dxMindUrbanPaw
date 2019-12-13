@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+class Constant {
+    static let kAPIHost = "http://dev.dxminds.online/APIT/public/api/"
+
+    
+}
