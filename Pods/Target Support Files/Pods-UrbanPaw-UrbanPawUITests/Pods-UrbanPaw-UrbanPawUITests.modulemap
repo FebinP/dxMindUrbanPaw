@@ -1,0 +1,6 @@
+framework module Pods_UrbanPaw_UrbanPawUITests {
+  umbrella header "Pods-UrbanPaw-UrbanPawUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
