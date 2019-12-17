@@ -1,16 +1,41 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
+  - DLRadioButton (1.4.12)
+  - GoogleMaps (3.6.0):
+    - GoogleMaps/Maps (= 3.6.0)
+  - GoogleMaps/Base (3.6.0)
+  - GoogleMaps/Maps (3.6.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.6.0):
+    - GoogleMaps/Base (= 3.6.0)
+  - IQKeyboardManager (6.5.4)
+  - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
+  - DLRadioButton (~> 1.4)
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManager
+  - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - DLRadioButton
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManager
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  GoogleMaps: 82f8fe307193bb4de6ef6bf9e88f1d624b718f9d
+  GooglePlaces: 1b9d29cf3e164903d873600f511f42acdfe85294
+  IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: c4f81dd9ee5cf2ad7a03357113f7ec359537f490
+PODFILE CHECKSUM: 0eb373e2edb20088dfdef87e5b6d9c883c5de0d9
 
 COCOAPODS: 1.8.4

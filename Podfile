@@ -8,7 +8,13 @@ target 'UrbanPaw' do
   # Pods for UrbanPaw
 
 pod 'Alamofire', '~> 5.0.0-rc.3'
-  target 'UrbanPawTests' do
+pod 'DLRadioButton', '~> 1.4'
+pod 'Toast-Swift', '~> 5.0.0'
+pod 'IQKeyboardManager'
+pod 'GooglePlaces'
+pod 'GoogleMaps'
+ 
+ target 'UrbanPawTests' do
     inherit! :search_paths
     # Pods for testing
   end

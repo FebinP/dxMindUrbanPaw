@@ -19,6 +19,22 @@
 		638C371823A36CD000F90BFA /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C371623A36CD000F90BFA /* MenuTableCell.swift */; };
 		638C371D23A373A900F90BFA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C371C23A373A900F90BFA /* Constant.swift */; };
 		638C371F23A373B700F90BFA /* NetworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C371E23A373B700F90BFA /* NetworkClass.swift */; };
+		638C372123A3A84D00F90BFA /* orderViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C372023A3A84D00F90BFA /* orderViewCollectionCell.swift */; };
+		63940DD123A8AB2B00FE4D58 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD023A8AB2B00FE4D58 /* ProfileVC.swift */; };
+		63940DD323A8B20400FE4D58 /* ProfileTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD223A8B20400FE4D58 /* ProfileTableCell.swift */; };
+		63940DD923A8FB8C00FE4D58 /* bookingOwnerprofileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD523A8FB8B00FE4D58 /* bookingOwnerprofileVC.swift */; };
+		63940DDA23A8FB8C00FE4D58 /* YourBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD623A8FB8B00FE4D58 /* YourBookingVC.swift */; };
+		63940DDB23A8FB8C00FE4D58 /* AcceptProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD723A8FB8B00FE4D58 /* AcceptProfileVC.swift */; };
+		63940DDC23A8FB8C00FE4D58 /* YourbookingdetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD823A8FB8C00FE4D58 /* YourbookingdetailVC.swift */; };
+		63940DDE23A8FE9600FE4D58 /* DetailBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DDD23A8FE9600FE4D58 /* DetailBookingVC.swift */; };
+		63C3CCB523A744C7000F6118 /* AccountSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCB423A744C7000F6118 /* AccountSettingVC.swift */; };
+		63C3CCE823A75FAE000F6118 /* SettingsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCE723A75FAE000F6118 /* SettingsTableCell.swift */; };
+		63C3CCEA23A764E7000F6118 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCE923A764E7000F6118 /* ContactUsVC.swift */; };
+		63C3CCED23A78F07000F6118 /* RaiseTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCEC23A78F07000F6118 /* RaiseTicketVC.swift */; };
+		63C3CCF023A79103000F6118 /* jobhistorydetailsvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCEF23A79102000F6118 /* jobhistorydetailsvc.swift */; };
+		63C3CCF423A79114000F6118 /* JobHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCF123A79114000F6118 /* JobHistoryTableViewCell.swift */; };
+		63C3CCF523A79114000F6118 /* JobHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C3CCF223A79114000F6118 /* JobHistoryTableViewCell.xib */; };
+		63C3CCF623A79114000F6118 /* JobHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCF323A79114000F6118 /* JobHistoryViewController.swift */; };
 		A1CC182716F7D0EAC1E61E9F /* Pods_UrbanPaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86982F6F95C286BF1484992B /* Pods_UrbanPaw.framework */; };
 		B6181C552AF33C9335941C68 /* Pods_UrbanPawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC0F359E6372D367CEA3571 /* Pods_UrbanPawTests.framework */; };
 		D9D2FB49C01EBBA3119AE7C0 /* Pods_UrbanPaw_UrbanPawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6435DE51617EEE3F534F39 /* Pods_UrbanPaw_UrbanPawUITests.framework */; };
@@ -64,6 +80,22 @@
 		638C371623A36CD000F90BFA /* MenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
 		638C371C23A373A900F90BFA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		638C371E23A373B700F90BFA /* NetworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClass.swift; sourceTree = "<group>"; };
+		638C372023A3A84D00F90BFA /* orderViewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderViewCollectionCell.swift; sourceTree = "<group>"; };
+		63940DD023A8AB2B00FE4D58 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		63940DD223A8B20400FE4D58 /* ProfileTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableCell.swift; sourceTree = "<group>"; };
+		63940DD523A8FB8B00FE4D58 /* bookingOwnerprofileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookingOwnerprofileVC.swift; sourceTree = "<group>"; };
+		63940DD623A8FB8B00FE4D58 /* YourBookingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourBookingVC.swift; sourceTree = "<group>"; };
+		63940DD723A8FB8B00FE4D58 /* AcceptProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptProfileVC.swift; sourceTree = "<group>"; };
+		63940DD823A8FB8C00FE4D58 /* YourbookingdetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourbookingdetailVC.swift; sourceTree = "<group>"; };
+		63940DDD23A8FE9600FE4D58 /* DetailBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookingVC.swift; sourceTree = "<group>"; };
+		63C3CCB423A744C7000F6118 /* AccountSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingVC.swift; sourceTree = "<group>"; };
+		63C3CCE723A75FAE000F6118 /* SettingsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableCell.swift; sourceTree = "<group>"; };
+		63C3CCE923A764E7000F6118 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		63C3CCEC23A78F07000F6118 /* RaiseTicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiseTicketVC.swift; sourceTree = "<group>"; };
+		63C3CCEF23A79102000F6118 /* jobhistorydetailsvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jobhistorydetailsvc.swift; sourceTree = "<group>"; };
+		63C3CCF123A79114000F6118 /* JobHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		63C3CCF223A79114000F6118 /* JobHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		63C3CCF323A79114000F6118 /* JobHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobHistoryViewController.swift; sourceTree = "<group>"; };
 		86982F6F95C286BF1484992B /* Pods_UrbanPaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrbanPaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CEE0E3B9F85BCCCD05DE5C /* Pods-UrbanPawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanPawTests.debug.xcconfig"; path = "Target Support Files/Pods-UrbanPawTests/Pods-UrbanPawTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD6435DE51617EEE3F534F39 /* Pods_UrbanPaw_UrbanPawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrbanPaw_UrbanPawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +231,12 @@
 		638C371523A36AFA00F90BFA /* MenuItems */ = {
 			isa = PBXGroup;
 			children = (
+				63940DD423A8FB7A00FE4D58 /* YourBooking */,
+				63C3CCEE23A790F1000F6118 /* JobHistory */,
+				63C3CCB423A744C7000F6118 /* AccountSettingVC.swift */,
+				63C3CCE923A764E7000F6118 /* ContactUsVC.swift */,
+				63C3CCEC23A78F07000F6118 /* RaiseTicketVC.swift */,
+				63940DD023A8AB2B00FE4D58 /* ProfileVC.swift */,
 			);
 			path = MenuItems;
 			sourceTree = "<group>";
@@ -207,6 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				638C371623A36CD000F90BFA /* MenuTableCell.swift */,
+				638C372023A3A84D00F90BFA /* orderViewCollectionCell.swift */,
+				63C3CCE723A75FAE000F6118 /* SettingsTableCell.swift */,
+				63940DD223A8B20400FE4D58 /* ProfileTableCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -218,6 +259,29 @@
 				638C371E23A373B700F90BFA /* NetworkClass.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		63940DD423A8FB7A00FE4D58 /* YourBooking */ = {
+			isa = PBXGroup;
+			children = (
+				63940DD723A8FB8B00FE4D58 /* AcceptProfileVC.swift */,
+				63940DD523A8FB8B00FE4D58 /* bookingOwnerprofileVC.swift */,
+				63940DD823A8FB8C00FE4D58 /* YourbookingdetailVC.swift */,
+				63940DD623A8FB8B00FE4D58 /* YourBookingVC.swift */,
+				63940DDD23A8FE9600FE4D58 /* DetailBookingVC.swift */,
+			);
+			path = YourBooking;
+			sourceTree = "<group>";
+		};
+		63C3CCEE23A790F1000F6118 /* JobHistory */ = {
+			isa = PBXGroup;
+			children = (
+				63C3CCF123A79114000F6118 /* JobHistoryTableViewCell.swift */,
+				63C3CCF223A79114000F6118 /* JobHistoryTableViewCell.xib */,
+				63C3CCF323A79114000F6118 /* JobHistoryViewController.swift */,
+				63C3CCEF23A79102000F6118 /* jobhistorydetailsvc.swift */,
+			);
+			path = JobHistory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +296,7 @@
 				638C36D923A36A6300F90BFA /* Frameworks */,
 				638C36DA23A36A6300F90BFA /* Resources */,
 				548E620B2E10B1DF25A98F91 /* [CP] Embed Pods Frameworks */,
+				F8FA78264F347F9A447AA7BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +335,7 @@
 				638C36FA23A36A6300F90BFA /* Frameworks */,
 				638C36FB23A36A6300F90BFA /* Resources */,
 				67C6ABB30D9278058923F331 /* [CP] Embed Pods Frameworks */,
+				1629F35360F9BD937DE33D68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C3CCF523A79114000F6118 /* JobHistoryTableViewCell.xib in Resources */,
 				638C36EC23A36A6300F90BFA /* LaunchScreen.storyboard in Resources */,
 				638C36E923A36A6300F90BFA /* Assets.xcassets in Resources */,
 				638C36E723A36A6300F90BFA /* Main.storyboard in Resources */,
@@ -352,6 +419,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1629F35360F9BD937DE33D68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UrbanPaw-UrbanPawUITests/Pods-UrbanPaw-UrbanPawUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UrbanPaw-UrbanPawUITests/Pods-UrbanPaw-UrbanPawUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UrbanPaw-UrbanPawUITests/Pods-UrbanPaw-UrbanPawUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		244EEF3614DEF58AFEC8FC6B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,6 +536,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8FA78264F347F9A447AA7BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UrbanPaw/Pods-UrbanPaw-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UrbanPaw/Pods-UrbanPaw-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UrbanPaw/Pods-UrbanPaw-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -462,10 +563,25 @@
 				638C371223A36AC500F90BFA /* YourorderVC.swift in Sources */,
 				638C36E023A36A6300F90BFA /* AppDelegate.swift in Sources */,
 				638C36E223A36A6300F90BFA /* SceneDelegate.swift in Sources */,
+				63C3CCF623A79114000F6118 /* JobHistoryViewController.swift in Sources */,
+				63940DD123A8AB2B00FE4D58 /* ProfileVC.swift in Sources */,
+				638C372123A3A84D00F90BFA /* orderViewCollectionCell.swift in Sources */,
+				63940DD323A8B20400FE4D58 /* ProfileTableCell.swift in Sources */,
+				63C3CCEA23A764E7000F6118 /* ContactUsVC.swift in Sources */,
+				63940DDC23A8FB8C00FE4D58 /* YourbookingdetailVC.swift in Sources */,
 				638C371823A36CD000F90BFA /* MenuTableCell.swift in Sources */,
 				638C371F23A373B700F90BFA /* NetworkClass.swift in Sources */,
+				63C3CCED23A78F07000F6118 /* RaiseTicketVC.swift in Sources */,
+				63C3CCF423A79114000F6118 /* JobHistoryTableViewCell.swift in Sources */,
+				63940DD923A8FB8C00FE4D58 /* bookingOwnerprofileVC.swift in Sources */,
+				63C3CCB523A744C7000F6118 /* AccountSettingVC.swift in Sources */,
+				63940DDE23A8FE9600FE4D58 /* DetailBookingVC.swift in Sources */,
+				63C3CCE823A75FAE000F6118 /* SettingsTableCell.swift in Sources */,
 				638C371023A36A9F00F90BFA /* LoginVC.swift in Sources */,
+				63940DDA23A8FB8C00FE4D58 /* YourBookingVC.swift in Sources */,
 				638C371D23A373A900F90BFA /* Constant.swift in Sources */,
+				63940DDB23A8FB8C00FE4D58 /* AcceptProfileVC.swift in Sources */,
+				63C3CCF023A79103000F6118 /* jobhistorydetailsvc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

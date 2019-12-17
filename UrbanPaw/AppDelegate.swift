@@ -7,16 +7,48 @@
 //
 
 import UIKit
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    var navigationController: UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.shared().isEnabled = true
+
         return true
     }
+    
+    func moveToHome()
+       {
+           
+           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           self.navigationController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as? UINavigationController
+           let rootVC = storyboard.instantiateViewController(withIdentifier: "YourorderVC") as? YourorderVC
+           navigationController = UINavigationController(rootViewController: rootVC!)
+           window?.rootViewController =   self.navigationController
+           window?.makeKeyAndVisible()
+
+           if window != nil {
+               UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil)
+           }
+       }
+       func moveToLogin()
+       {
+           
+           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           self.navigationController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as? UINavigationController
+           let rootVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC
+           navigationController = UINavigationController(rootViewController: rootVC!)
+           window?.rootViewController =   self.navigationController
+           window?.makeKeyAndVisible()
+           if window != nil {
+               UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil)
+           }
+       }
 
     // MARK: UISceneSession Lifecycle
 

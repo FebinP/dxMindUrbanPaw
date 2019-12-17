@@ -21,27 +21,31 @@ class NetworkClass{
         let url = Constant.kAPIHost+strURL
         print("url",url)
         
-//        Alamofire.request(url, method: .post, parameters: postParam, encoding: JSONEncoding.default, headers: [:]).responseJSON {
-//            response in
-//            switch (response.result) {
-//            case .success:
-//
-//
+        AF.request(url, method: .post, parameters: postParam, encoding: JSONEncoding.default, headers: [:]).responseJSON {
+            response in
+            switch (response.result) {
+           case .success(let value):
+
+
 //                print(response)
 //                print(response.result.value as Any)
 //                let json = response.result.value as? NSDictionary
 //                completion(true,json!);
-//
-//                break
-//            case .failure:
-//                completion(false,[:])
-//                print(Error.self)
-//
-//
-//            }
+               print(response)
+               print(value as Any)
+               let json = value as? NSDictionary
+               completion(true,json!);
+                
+               
+            case .failure(let error):
+                completion(false,[:])
+                print(error)
+
+
+            }
             
             
-   //     }
+        }
         
     }
     func getDetailsFromServer(withUrl strURL: String,completion:@escaping (_ isSuccess: Bool, _ response:NSDictionary) -> Void)
@@ -52,30 +56,29 @@ class NetworkClass{
         
         
         
-//        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: [:]).responseJSON {
-//            response in
-//            switch (response.result) {
-//            case .success:
-//
-//
-//                print(response)
-//                print(response.result.value as Any)
-//                let json = response.result.value as? NSDictionary
-//                completion(true,json!);
-//
-//                break
-//            case .failure:
-//
-//                completion(false,[:]);
-//
-//                print(Error.self)
-//
-//            }
-//
-//
+        AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: [:]).responseJSON {
+            response in
+            switch (response.result) {
+            case .success(let value):
+
+
+                print(response)
+                print(value as Any)
+                let json = value as? NSDictionary
+                completion(true,json!);
+
+                break
+            case .failure(let error):
+
+                completion(false,[:]);
+
+                print(error)
+
+            }
+
+
             
-            // Do any additional setup after loading the view.
-  //      }
+        }
         
     }
 }
