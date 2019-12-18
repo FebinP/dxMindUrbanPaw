@@ -128,5 +128,9 @@ class RaiseTicketVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func submitBtnClk(_ sender: Any) {
+    }
+    
+    @IBAction func cancelBtn(_ sender: Any) {
+    }
 }
