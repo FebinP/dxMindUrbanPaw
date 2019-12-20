@@ -8,7 +8,19 @@
 
 import UIKit
 import Toast_Swift
-
+extension UITextField {
+    func setLeftPaddingPoints(_ amount:CGFloat){
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
+    }
+    func addBorder() {
+        self.layer.cornerRadius = 5
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderWidth = 1
+    }
+    
+}
 class LoginVC: UIViewController {
 
     @IBOutlet weak var passwordTF: UITextField!
@@ -17,6 +29,10 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
 
+        emailTF.setLeftPaddingPoints(10)
+        emailTF.addBorder()
+        passwordTF.setLeftPaddingPoints(10)
+        passwordTF.addBorder()
         // Do any additional setup after loading the view.
     }
     @IBAction func loginBtnClk(_ sender: Any) {

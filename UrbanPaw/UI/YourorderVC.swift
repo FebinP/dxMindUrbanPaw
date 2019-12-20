@@ -43,7 +43,7 @@ class YourorderVC: UIViewController,UITableViewDelegate,UITableViewDataSource,UI
         navigationItem.rightBarButtonItem =  UIBarButtonItem(image: UIImage(named: "notification"), style: .plain, target: self, action: #selector(showNotification))
         self.navigationController?.navigationBar.tintColor = Constant.THEAMCOLOR
         navigationItem.rightBarButtonItem?.tintColor = UIColor.gray
-
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.title = "YOUR ORDERS"
 
         menuTableView.delegate = self

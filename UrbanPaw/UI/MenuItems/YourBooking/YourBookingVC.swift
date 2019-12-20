@@ -31,13 +31,20 @@ class YourBookingVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
     //        let button1 = UIBarButtonItem(image: UIImage(named: "notification"), style: .plain, target: self, action: Selector("action")) // action:#selector(Class.MethodName) for swift 3
             let button1 = UIBarButtonItem(image: UIImage(named: "notification"), style: .plain, target: self, action: #selector(toggleTapped)) // action:#selector(Class.MethodName) for swift 3
             self.navigationItem.rightBarButtonItem  = button1
-            button1.tintColor = UIColor(red: 5/255.0, green: 61/255.0, blue: 83/255.0, alpha: 1.0)
+            button1.tintColor =  UIColor.gray
             
             
             let button2 = UIBarButtonItem(image: UIImage(named: "HamburgerMenu"), style: .plain, target: self, action: #selector(toggleTapped)) // action:#selector(Class.MethodName) for swift 3
             self.navigationItem.leftBarButtonItem  = button2
-            button2.tintColor = UIColor(red: 5/255.0, green: 61/255.0, blue: 83/255.0, alpha: 1.0)
+           
+            button2.tintColor = UIColor.gray
+            navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
             
+            let titleTextAttributes = [NSAttributedString.Key.foregroundColor: Constant.THEAMCOLOR]
+           
+            segmentControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
+            segmentControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
+
             // Do any additional setup after loading the view.
         }
         //btn action

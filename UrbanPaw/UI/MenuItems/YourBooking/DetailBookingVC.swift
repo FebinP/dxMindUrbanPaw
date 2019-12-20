@@ -44,6 +44,12 @@ class DetailBookingVC: UIViewController {
         super.viewDidLoad()
 
         menuSegment.selectedSegmentIndex = 0
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: Constant.THEAMCOLOR]
+                  
+                   menuSegment.setTitleTextAttributes(titleTextAttributes, for: .normal)
+                   menuSegment.setTitleTextAttributes(titleTextAttributes, for: .selected)
         updateView()
         // Do any additional setup after loading the view.
     }

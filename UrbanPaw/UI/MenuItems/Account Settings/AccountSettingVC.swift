@@ -27,6 +27,8 @@ class AccountSettingVC: UIViewController,UITableViewDelegate,UITableViewDataSour
         
         self.navigationItem.setHidesBackButton(true, animated:true);
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "HamburgerMenu"), style: .plain, target: self, action: #selector(toggleTapped))
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         navigationItem.leftBarButtonItem?.tintColor = UIColor.lightGray
         // Do any additional setup after loading the view.
     }
@@ -43,6 +45,7 @@ class AccountSettingVC: UIViewController,UITableViewDelegate,UITableViewDataSour
           
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)as!SettingsTableCell
+           cell.selectionStyle = .none
            cell.settingTitle.text = settingsarray[indexPath.row]
 
                return cell
@@ -51,7 +54,14 @@ class AccountSettingVC: UIViewController,UITableViewDelegate,UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
            return 44
        }
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //ChangePasswordSegue
+        
+        if (indexPath.row == 0){
+          performSegue(withIdentifier: "ChangePasswordSegue", sender: nil)
+        }
+        
+    }
     /*
     // MARK: - Navigation
 

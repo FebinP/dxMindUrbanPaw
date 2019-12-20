@@ -36,53 +36,79 @@ class YourbookingdetailVC: UIViewController {
        @IBOutlet weak var mGeneralBehaviourlbl : UILabel!
         @IBOutlet weak var msafeBreedinfglbl : UILabel!
        @IBOutlet weak var maboutpetlbl : UILabel!
+       @IBOutlet weak var mfileBtn : UIButton!
+        
        
        var selectedCateroy = 1
        let segmentBottomBorder = CALayer()
        
        override func viewDidLoad() {
            super.viewDidLoad()
+        let myimage = UIImage(named: "files")
+        let tintedImage = myimage?.withRenderingMode(.alwaysTemplate)
+        mfileBtn.setImage(tintedImage, for: .normal)
+        mfileBtn.tintColor = UIColor(red: 5/255.0, green: 61/255.0, blue: 83/255.0, alpha: 1.0)
+        
+     
             
-           mDetailsSegment.removeBorder()
-           setBorder(sender: mDetailsSegment)
-           self.title = "Pet details"
-           //title.tintColor = UIColor.systemPink
-           let button1 = UIBarButtonItem(image: UIImage(named: "notification"), style: .plain, target: self, action: #selector(notificationTapped)) // action:#selector(Class.MethodName) for swift 3
-           self.navigationItem.rightBarButtonItem  = button1
-           button1.tintColor = UIColor(red: 5/255.0, green: 61/255.0, blue: 83/255.0, alpha: 1.0)
-           
-           
-   //        let button2 = UIBarButtonItem(image: UIImage(named: "HamburgerMenu"), style: .plain, target: self, action: #selector(toggleTapped)) // action:#selector(Class.MethodName) for swift 3
-   //        self.navigationItem.leftBarButtonItem  = button2
-   //        button2.tintColor = UIColor.gray
-           // Do any additional setup after loading the view.
+
        }
        @objc func notificationTapped()
        {
            
        }
+    
+    @IBAction func mAcceptBtnaction(_ sender: Any) {
+    
+        
+    
+        }
+    
+    @IBAction func mRejectBtnaction(_ sender: Any) {
+    }
+    @IBAction func mCallNowBtnaction(_ sender: Any) {
+        
+        if let phoneCallURL = URL(string: "tel://\( Constant.CONTACTNUMBER)") {
+                
+                let application:UIApplication = UIApplication.shared
+                if (application.canOpenURL(phoneCallURL)) {
+                    if #available(iOS 10.0, *) {
+                        application.open(phoneCallURL, options: [:], completionHandler: nil)
+                    } else {
+                        UIApplication.shared.openURL(phoneCallURL)
+                    }
+                }
+                else{
+                    let alertController = UIAlertController(title: "Error", message:
+                        "Not able to make a call.", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                    
+                    self.present(alertController, animated: true, completion: nil)            }
+            }
+        }
+    
    //    @objc func toggleTapped(){
    //        self.navigationController?.popViewController(animated: true)
    //    }
-       @IBAction func mDetailsSegmentaction(_ sender: Any) {
-           //segmentBottomBorder.removeFromSuperlayer()
-               setBorder(sender: mDetailsSegment)
-               selectedCateroy = mDetailsSegment.selectedSegmentIndex+1
-                   
-           }
+//       @IBAction func mDetailsSegmentaction(_ sender: Any) {
+//           //segmentBottomBorder.removeFromSuperlayer()
+//               setBorder(sender: mDetailsSegment)
+//               selectedCateroy = mDetailsSegment.selectedSegmentIndex+1
+//
+//           }
            
-           func setBorder(sender:UISegmentedControl){
-               
-               let underlineWidth: CGFloat = sender.bounds.size.width / CGFloat(sender.numberOfSegments)
-               let underlineHeight: CGFloat = 2
-               let underlineXPosition = CGFloat(sender.selectedSegmentIndex * Int(underlineWidth))
-               let underLineYPosition = sender.bounds.size.height - underlineHeight
-               segmentBottomBorder.frame = CGRect(x: underlineXPosition, y: underLineYPosition, width: underlineWidth, height: underlineHeight)
-               //let underline = UIView(frame: underlineFrame)
-               segmentBottomBorder.backgroundColor = UIColor(red: 5/255.0, green: 61/255.0, blue: 83/255.0, alpha: 1.0).cgColor
-               sender.layer.addSublayer(segmentBottomBorder)
-               
-           }
+//           func setBorder(sender:UISegmentedControl){
+//
+//               let underlineWidth: CGFloat = sender.bounds.size.width / CGFloat(sender.numberOfSegments)
+//               let underlineHeight: CGFloat = 2
+//               let underlineXPosition = CGFloat(sender.selectedSegmentIndex * Int(underlineWidth))
+//               let underLineYPosition = sender.bounds.size.height - underlineHeight
+//               segmentBottomBorder.frame = CGRect(x: underlineXPosition, y: underLineYPosition, width: underlineWidth, height: underlineHeight)
+//               //let underline = UIView(frame: underlineFrame)
+//               segmentBottomBorder.backgroundColor = UIColor(red: 5/255.0, green: 61/255.0, blue: 83/255.0, alpha: 1.0).cgColor
+//               sender.layer.addSublayer(segmentBottomBorder)
+//
+//           }
 
         // Do any additional setup after loading the view.
     }

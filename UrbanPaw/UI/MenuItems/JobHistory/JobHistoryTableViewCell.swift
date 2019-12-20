@@ -19,6 +19,16 @@ class JobHistoryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        viewdetailslbl.titleLabel?.textColor = Constant.THEAMCOLOR
+        
+        let btnTitleAttribute : [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14),
+            NSAttributedString.Key.foregroundColor : Constant.THEAMCOLOR,
+            NSAttributedString.Key.underlineStyle : NSUnderlineStyle.single.rawValue]
+        
+        let attributeString = NSMutableAttributedString(string: "View Detail",
+                                                        attributes: btnTitleAttribute)
+        viewdetailslbl.setAttributedTitle(attributeString, for: .normal)
         // Initialization code
     }
 

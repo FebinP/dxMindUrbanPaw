@@ -19,22 +19,22 @@ class jobhistorydetailsvc: UIViewController {
     @IBOutlet weak var mPetIDlbl : UILabel!
     @IBOutlet weak var mPetTypelbl : UILabel!
     @IBOutlet weak var mTreatmentNamelbl : UILabel!
-     @IBOutlet weak var mBreedTypelbl : UILabel!
+    @IBOutlet weak var mBreedTypelbl : UILabel!
     
     @IBOutlet weak var mAgelbl : UILabel!
     @IBOutlet weak var mGenderlbl : UILabel!
     @IBOutlet weak var mWeightlbl : UILabel!
-     @IBOutlet weak var mVaccinationdtllbl : UILabel!
+    @IBOutlet weak var mVaccinationdtllbl : UILabel!
     @IBOutlet weak var mMedicalhstylbl : UILabel!
     @IBOutlet weak var mCurrentMedicationlbl : UILabel!
     @IBOutlet weak var mBloodGrouplbl : UILabel!
-     @IBOutlet weak var mBloodDonorlbl : UILabel!
+    @IBOutlet weak var mBloodDonorlbl : UILabel!
     //@IBOutlet weak var mLastdatelbl : UILabel!
     @IBOutlet weak var mLastdatelbl : UILabel!
     @IBOutlet weak var mDontaedlbl : UILabel!
     @IBOutlet weak var mfoodpreferancelbl : UILabel!
     @IBOutlet weak var mGeneralBehaviourlbl : UILabel!
-     @IBOutlet weak var msafeBreedinfglbl : UILabel!
+    @IBOutlet weak var msafeBreedinfglbl : UILabel!
     @IBOutlet weak var maboutpetlbl : UILabel!
     
     var selectedCateroy = 1
@@ -45,13 +45,21 @@ class jobhistorydetailsvc: UIViewController {
          
         mDetailsSegment.removeBorder()
         setBorder(sender: mDetailsSegment)
-        self.title = "Pet details"
+       
         //title.tintColor = UIColor.systemPink
         let button1 = UIBarButtonItem(image: UIImage(named: "notification"), style: .plain, target: self, action: #selector(notificationTapped)) // action:#selector(Class.MethodName) for swift 3
         self.navigationItem.rightBarButtonItem  = button1
         button1.tintColor = UIColor.gray
         
-        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+         mDetailsSegment.selectedSegmentIndex = 0
+                    self.title = "Owner details"
+             
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: Constant.THEAMCOLOR]
+                                
+                mDetailsSegment.setTitleTextAttributes(titleTextAttributes, for: .normal)
+                mDetailsSegment.setTitleTextAttributes(titleTextAttributes, for: .selected)
+
 //        let button2 = UIBarButtonItem(image: UIImage(named: "HamburgerMenu"), style: .plain, target: self, action: #selector(toggleTapped)) // action:#selector(Class.MethodName) for swift 3
 //        self.navigationItem.leftBarButtonItem  = button2
 //        button2.tintColor = UIColor.gray
@@ -68,6 +76,15 @@ class jobhistorydetailsvc: UIViewController {
         //segmentBottomBorder.removeFromSuperlayer()
             setBorder(sender: mDetailsSegment)
             selectedCateroy = mDetailsSegment.selectedSegmentIndex+1
+        if mDetailsSegment.selectedSegmentIndex == 0{
+             self.title = "Owner details"
+        }
+        else{
+             self.title = "Pet details"
+            
+        }
+        
+        
                 
         }
         
@@ -79,7 +96,7 @@ class jobhistorydetailsvc: UIViewController {
             let underLineYPosition = sender.bounds.size.height - underlineHeight
             segmentBottomBorder.frame = CGRect(x: underlineXPosition, y: underLineYPosition, width: underlineWidth, height: underlineHeight)
             //let underline = UIView(frame: underlineFrame)
-            segmentBottomBorder.backgroundColor = UIColor(red: 229/255.0, green: 66/255.0, blue: 153/255.0, alpha: 1).cgColor
+            segmentBottomBorder.backgroundColor = Constant.THEAMCOLOR.cgColor
             sender.layer.addSublayer(segmentBottomBorder)
             
         }

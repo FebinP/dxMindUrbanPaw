@@ -54,6 +54,12 @@ class JobHistoryViewController: UIViewController,UITableViewDelegate,UITableView
         self.navigationItem.leftBarButtonItem  = button2
         button2.tintColor = UIColor.gray
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: Constant.THEAMCOLOR]
+                  
+                   segmentControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
+                   segmentControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
+        
         // Do any additional setup after loading the view.
     }
     //btn action
@@ -87,7 +93,7 @@ class JobHistoryViewController: UIViewController,UITableViewDelegate,UITableView
         let underLineYPosition = sender.bounds.size.height - underlineHeight
        segmentBottomBorder.frame = CGRect(x: underlineXPosition, y: underLineYPosition, width: underlineWidth, height: underlineHeight)
         //let underline = UIView(frame: underlineFrame)
-        segmentBottomBorder.backgroundColor = UIColor(red: 229/255.0, green: 66/255.0, blue: 153/255.0, alpha: 1).cgColor
+        segmentBottomBorder.backgroundColor = Constant.THEAMCOLOR.cgColor
         sender.layer.addSublayer(segmentBottomBorder)
         
     }

@@ -22,11 +22,12 @@
 		638C372123A3A84D00F90BFA /* orderViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C372023A3A84D00F90BFA /* orderViewCollectionCell.swift */; };
 		63940DD123A8AB2B00FE4D58 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD023A8AB2B00FE4D58 /* ProfileVC.swift */; };
 		63940DD323A8B20400FE4D58 /* ProfileTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD223A8B20400FE4D58 /* ProfileTableCell.swift */; };
-		63940DD923A8FB8C00FE4D58 /* bookingOwnerprofileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD523A8FB8B00FE4D58 /* bookingOwnerprofileVC.swift */; };
 		63940DDA23A8FB8C00FE4D58 /* YourBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD623A8FB8B00FE4D58 /* YourBookingVC.swift */; };
 		63940DDB23A8FB8C00FE4D58 /* AcceptProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD723A8FB8B00FE4D58 /* AcceptProfileVC.swift */; };
-		63940DDC23A8FB8C00FE4D58 /* YourbookingdetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DD823A8FB8C00FE4D58 /* YourbookingdetailVC.swift */; };
 		63940DDE23A8FE9600FE4D58 /* DetailBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63940DDD23A8FE9600FE4D58 /* DetailBookingVC.swift */; };
+		63BB1CF123AB4EAD00DC683A /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1CF023AB4EAD00DC683A /* ChangePasswordVC.swift */; };
+		63BB1CF323AB86A500DC683A /* bookingOwnerprofileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1CF223AB86A500DC683A /* bookingOwnerprofileVC.swift */; };
+		63BB1CF523AB897300DC683A /* YourbookingdetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1CF423AB897300DC683A /* YourbookingdetailVC.swift */; };
 		63C3CCB523A744C7000F6118 /* AccountSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCB423A744C7000F6118 /* AccountSettingVC.swift */; };
 		63C3CCE823A75FAE000F6118 /* SettingsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCE723A75FAE000F6118 /* SettingsTableCell.swift */; };
 		63C3CCEA23A764E7000F6118 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3CCE923A764E7000F6118 /* ContactUsVC.swift */; };
@@ -83,11 +84,12 @@
 		638C372023A3A84D00F90BFA /* orderViewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderViewCollectionCell.swift; sourceTree = "<group>"; };
 		63940DD023A8AB2B00FE4D58 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		63940DD223A8B20400FE4D58 /* ProfileTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableCell.swift; sourceTree = "<group>"; };
-		63940DD523A8FB8B00FE4D58 /* bookingOwnerprofileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookingOwnerprofileVC.swift; sourceTree = "<group>"; };
 		63940DD623A8FB8B00FE4D58 /* YourBookingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourBookingVC.swift; sourceTree = "<group>"; };
 		63940DD723A8FB8B00FE4D58 /* AcceptProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptProfileVC.swift; sourceTree = "<group>"; };
-		63940DD823A8FB8C00FE4D58 /* YourbookingdetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourbookingdetailVC.swift; sourceTree = "<group>"; };
 		63940DDD23A8FE9600FE4D58 /* DetailBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookingVC.swift; sourceTree = "<group>"; };
+		63BB1CF023AB4EAD00DC683A /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		63BB1CF223AB86A500DC683A /* bookingOwnerprofileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookingOwnerprofileVC.swift; sourceTree = "<group>"; };
+		63BB1CF423AB897300DC683A /* YourbookingdetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourbookingdetailVC.swift; sourceTree = "<group>"; };
 		63C3CCB423A744C7000F6118 /* AccountSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingVC.swift; sourceTree = "<group>"; };
 		63C3CCE723A75FAE000F6118 /* SettingsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableCell.swift; sourceTree = "<group>"; };
 		63C3CCE923A764E7000F6118 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
@@ -231,9 +233,9 @@
 		638C371523A36AFA00F90BFA /* MenuItems */ = {
 			isa = PBXGroup;
 			children = (
+				63BB1CEF23AB4E8500DC683A /* Account Settings */,
 				63940DD423A8FB7A00FE4D58 /* YourBooking */,
 				63C3CCEE23A790F1000F6118 /* JobHistory */,
-				63C3CCB423A744C7000F6118 /* AccountSettingVC.swift */,
 				63C3CCE923A764E7000F6118 /* ContactUsVC.swift */,
 				63C3CCEC23A78F07000F6118 /* RaiseTicketVC.swift */,
 				63940DD023A8AB2B00FE4D58 /* ProfileVC.swift */,
@@ -264,13 +266,22 @@
 		63940DD423A8FB7A00FE4D58 /* YourBooking */ = {
 			isa = PBXGroup;
 			children = (
+				63BB1CF423AB897300DC683A /* YourbookingdetailVC.swift */,
+				63BB1CF223AB86A500DC683A /* bookingOwnerprofileVC.swift */,
 				63940DD723A8FB8B00FE4D58 /* AcceptProfileVC.swift */,
-				63940DD523A8FB8B00FE4D58 /* bookingOwnerprofileVC.swift */,
-				63940DD823A8FB8C00FE4D58 /* YourbookingdetailVC.swift */,
 				63940DD623A8FB8B00FE4D58 /* YourBookingVC.swift */,
 				63940DDD23A8FE9600FE4D58 /* DetailBookingVC.swift */,
 			);
 			path = YourBooking;
+			sourceTree = "<group>";
+		};
+		63BB1CEF23AB4E8500DC683A /* Account Settings */ = {
+			isa = PBXGroup;
+			children = (
+				63C3CCB423A744C7000F6118 /* AccountSettingVC.swift */,
+				63BB1CF023AB4EAD00DC683A /* ChangePasswordVC.swift */,
+			);
+			path = "Account Settings";
 			sourceTree = "<group>";
 		};
 		63C3CCEE23A790F1000F6118 /* JobHistory */ = {
@@ -568,20 +579,21 @@
 				638C372123A3A84D00F90BFA /* orderViewCollectionCell.swift in Sources */,
 				63940DD323A8B20400FE4D58 /* ProfileTableCell.swift in Sources */,
 				63C3CCEA23A764E7000F6118 /* ContactUsVC.swift in Sources */,
-				63940DDC23A8FB8C00FE4D58 /* YourbookingdetailVC.swift in Sources */,
 				638C371823A36CD000F90BFA /* MenuTableCell.swift in Sources */,
 				638C371F23A373B700F90BFA /* NetworkClass.swift in Sources */,
 				63C3CCED23A78F07000F6118 /* RaiseTicketVC.swift in Sources */,
 				63C3CCF423A79114000F6118 /* JobHistoryTableViewCell.swift in Sources */,
-				63940DD923A8FB8C00FE4D58 /* bookingOwnerprofileVC.swift in Sources */,
+				63BB1CF123AB4EAD00DC683A /* ChangePasswordVC.swift in Sources */,
 				63C3CCB523A744C7000F6118 /* AccountSettingVC.swift in Sources */,
 				63940DDE23A8FE9600FE4D58 /* DetailBookingVC.swift in Sources */,
 				63C3CCE823A75FAE000F6118 /* SettingsTableCell.swift in Sources */,
 				638C371023A36A9F00F90BFA /* LoginVC.swift in Sources */,
 				63940DDA23A8FB8C00FE4D58 /* YourBookingVC.swift in Sources */,
+				63BB1CF523AB897300DC683A /* YourbookingdetailVC.swift in Sources */,
 				638C371D23A373A900F90BFA /* Constant.swift in Sources */,
 				63940DDB23A8FB8C00FE4D58 /* AcceptProfileVC.swift in Sources */,
 				63C3CCF023A79103000F6118 /* jobhistorydetailsvc.swift in Sources */,
+				63BB1CF323AB86A500DC683A /* bookingOwnerprofileVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

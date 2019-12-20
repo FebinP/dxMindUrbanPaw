@@ -29,7 +29,11 @@ class RaiseTicketVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
         thePicker.dataSource = self
 
         serviceTypeTF.inputView = thePicker
+        serviceTypeTF.setLeftPaddingPoints(10)
+        
         priorityTF.inputView = thePicker
+        priorityTF.setLeftPaddingPoints(10)
+
         
                messageTV.delegate = self
                placeholderLabel = UILabel()
